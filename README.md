@@ -6,6 +6,8 @@ Aula 1.1 - Introdução e criação de projeto Maven
 - criação e configuração do projeto.
 
 Aula 1.2 - Tomcat
+- configurando o tomcat.
+- criando a página inicial.
 
 Aula 1.3 - Servlets
  
