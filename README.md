@@ -10,6 +10,8 @@ Aula 1.2 - Tomcat
 - criando a página inicial.
 
 Aula 1.3 - Servlets
+- criando uma classe Servlet.
+- exibindo objetos para o usuário.
  
 Aula 1.4 - JSP
  
