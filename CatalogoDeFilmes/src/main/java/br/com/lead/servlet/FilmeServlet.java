@@ -26,7 +26,6 @@ public class FilmeServlet extends HttpServlet{
 		filmes.add(matrix);
 		filmes.add(forrestGump);
 		
-		req.getParameter("genero");
 		String genero = req.getParameter("genero");
 		
 		resp.setContentType("text/HTML");
