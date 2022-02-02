@@ -3,7 +3,9 @@ package br.com.lead.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,26 +30,12 @@ public class FilmeServlet extends HttpServlet{
 		
 		String genero = req.getParameter("genero");
 		
-		resp.setContentType("text/HTML");
-		PrintWriter out = resp.getWriter();
+		ArrayList<Filme> listaFiltrada = filmes.stream().filter(filme -> filme.getGenero().toUpperCase().equals(genero.toUpperCase()))
+				.collect(Collectors.toCollection(ArrayList::new));
 		
-		out.println("<h2> Lista de Filmes, utilizando Servlet </h2>");
+		req.setAttribute("listaFiltrada", listaFiltrada);
 		
-		out.println("<ol>");
-		/*
-		filmes.forEach(filme -> {
-			out.println(String.format("<li> Nome: %s", filme.getNome()));
-			out.println(String.format("Gênero: %s", filme.getGenero()));
-			out.println(String.format("Ano: %s </li>", filme.getAno()));
-		});
-		*/
-		//requisição do tipo get (com parâmetros passados na url) para filtrar os filmes com base no gênero
-		filmes.stream().filter(filme -> filme.getGenero().toUpperCase().equals(genero.toUpperCase())).forEach(filme -> {
-			out.println(String.format("<li> Nome: %s", filme.getNome()));
-			out.println(String.format("Gênero: %s", filme.getGenero()));
-			out.println(String.format("Ano: %s </li>", filme.getAno()));
-		});
-		out.println("</ol>");
-		out.close();
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/lista-filmes.jsp");
+		dispatcher.forward(req, resp);
 	}
 }
