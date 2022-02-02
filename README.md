@@ -14,6 +14,8 @@ Aula 1.3 - Servlets
 - exibindo objetos para o usuário.
  
 Aula 1.4 - JSP
+- utilizando a JSP em um projeto web.
+- integrando uma classe servlet com a JSP.
  
 Aula 2.1 - Apresentando persistência de dados com JPA e Hibernate
  
