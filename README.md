@@ -18,6 +18,8 @@ Aula 1.4 - JSP
 - integrando uma classe servlet com a JSP.
  
 Aula 2.1 - Apresentando persistência de dados com JPA e Hibernate
+- configurando hibernate e JPA.
+- persistindo dados no banco.
  
 Aula 2.2 - EntityManager e Entity States: Managed, Detached, Transient, Deleted
  
