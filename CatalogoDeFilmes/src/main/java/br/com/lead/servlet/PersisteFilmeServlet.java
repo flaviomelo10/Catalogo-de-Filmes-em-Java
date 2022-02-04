@@ -12,9 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.lead.modelo.Filme;
+import br.com.lead.util.JPAUtil;
 
 @WebServlet("/persistir-filme")
 public class PersisteFilmeServlet extends HttpServlet{
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		String nome = req.getParameter("nome");
@@ -22,15 +24,13 @@ public class PersisteFilmeServlet extends HttpServlet{
 		Integer ano = Integer.valueOf(req.getParameter("ano"));
 		
 		Filme filme = new Filme(nome, genero, ano);
-		
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("catalogodefilmes");
-		EntityManager em = emf.createEntityManager();
+				
+		EntityManager em = JPAUtil.getEntityManager();
 		
 		em.getTransaction().begin();
 		em.persist(filme);
 		em.getTransaction().commit();
 		
 		em.close();
-		emf.close();
 	}	
 }
