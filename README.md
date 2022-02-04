@@ -22,6 +22,9 @@ Aula 2.1 - Apresentando persistência de dados com JPA e Hibernate
 - persistindo dados no banco.
  
 Aula 2.2 - EntityManager e Entity States: Managed, Detached, Transient, Deleted
+- EntityManager e classe JPAUtil.
+- estados de persistências do hibernate (managed, detached, transient, deleted).
+- identificar o momento em cada persistência se encontra em cada estado.
  
 Aula 2.3 - Relacionamentos
  
