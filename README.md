@@ -27,6 +27,8 @@ Aula 2.2 - EntityManager e Entity States: Managed, Detached, Transient, Deleted
 - identificar o momento em cada persistência se encontra em cada estado.
  
 Aula 2.3 - Relacionamentos
+- realizando mapeamento de relacionamento entre entidades.
+- persistindo dados referentes a autor.
  
 Aula 3.1 - Configurando projeto para trabalhar com SpringMVC
  
