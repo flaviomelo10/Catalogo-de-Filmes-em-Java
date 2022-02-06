@@ -31,6 +31,8 @@ Aula 2.3 - Relacionamentos
 - persistindo dados referentes a autor.
  
 Aula 3.1 - Configurando projeto para trabalhar com SpringMVC
+- como configurar o spring mvc.
+- dispatcher servlet
  
 Aula 3.2 - Apresentando o Controller
  
