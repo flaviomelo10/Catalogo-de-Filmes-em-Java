@@ -35,6 +35,8 @@ Aula 3.1 - Configurando projeto para trabalhar com SpringMVC
 - dispatcher servlet
  
 Aula 3.2 - Apresentando o Controller
+- introdução ao elemento controller do Spring.
+- mapear os métodos de um controller e realizar um retorno a uma requisição.
  
 Aula 3.3 - Spring e JPA
  
