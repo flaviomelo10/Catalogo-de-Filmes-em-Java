@@ -39,6 +39,10 @@ Aula 3.2 - Apresentando o Controller
 - mapear os métodos de um controller e realizar um retorno a uma requisição.
  
 Aula 3.3 - Spring e JPA
+- migração do comportamento de um servlet para um controller do spring mvc.
+- criação de um recurso ou funcionalidade para consulta de filmes.
+- compreender a utilidade da classe model and view do spring mvc.
+- enviar dados para uma jsp a partir do model adn view.
  
 Aula 3.4 - Spring Boot
  
