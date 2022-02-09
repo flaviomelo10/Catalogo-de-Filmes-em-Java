@@ -45,6 +45,8 @@ Aula 3.3 - Spring e JPA
 - enviar dados para uma jsp a partir do model adn view.
  
 Aula 3.4 - Spring Boot
+- realizar a criação de um projeto pelo spring initialiazr.
+- realizar a inclusão de um recurso ou funcionalidade do spring boot que será acessado a partir da raiz do servidor web embarcado (tomcat).
  
 Aula 4.1 - API REST e Métodos HTTP
  
