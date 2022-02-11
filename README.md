@@ -49,6 +49,10 @@ Aula 3.4 - Spring Boot
 - realizar a inclusão de um recurso ou funcionalidade do spring boot que será acessado a partir da raiz do servidor web embarcado (tomcat).
  
 Aula 4.1 - API REST e Métodos HTTP
+- introdução à arquitetura REST.
+- principais métodos http (get, post, put, delete).
+- formato json para representação de dados.
+- adequar o controller FilmeController ao padrão REST.
  
 Aula 5.1 - Criando projeto Angular
  
