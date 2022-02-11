@@ -55,6 +55,9 @@ Aula 4.1 - API REST e Métodos HTTP
 - adequar o controller FilmeController ao padrão REST.
  
 Aula 5.1 - Criando projeto Angular
+- introdução ao framework Angular.
+- instalação do Angular cli, Node Js e do Visual Studio Code.
+- criação de um projeto Angular.
  
 Aula 5.2 - Data Binding e Componentização
  
